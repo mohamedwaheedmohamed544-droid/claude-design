@@ -1,0 +1,58 @@
+/* PureMinds — Web Font Declarations */
+/* 29LT Zarid Sans — primary UI typeface */
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Zarid Sans';
+  src: url('../fonts/29LTZaridSans-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

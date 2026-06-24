@@ -1,0 +1,92 @@
+/* PureMinds — Color Tokens */
+
+:root {
+  /* ─── Navy (primary brand) ─── */
+  --color-navy-950: #030F1C;
+  --color-navy-900: #051D36;   /* Primary brand navy */
+  --color-navy-800: #0A2F57;
+  --color-navy-700: #0D3D6E;
+  --color-navy-600: #105086;
+  --color-navy-500: #1467A8;
+  --color-navy-400: #3381BB;
+  --color-navy-300: #66A3CC;
+  --color-navy-200: #99C2DE;
+  --color-navy-100: #CCE1EF;
+  --color-navy-50:  #EBF3F9;
+
+  /* ─── Blue (sky / interactive) ─── */
+  --color-blue-600: #007AB8;
+  --color-blue-500: #009ADE;   /* Primary interactive blue */
+  --color-blue-400: #33AEE5;
+  --color-blue-300: #66C3EC;
+  --color-blue-200: #99D7F3;
+  --color-blue-100: #CCEBF9;
+  --color-blue-50:  #EBF7FD;
+
+  /* ─── Teal ─── */
+  --color-teal-600: #169490;
+  --color-teal-500: #1DB5AF;   /* Brand teal */
+  --color-teal-400: #4AC4BF;
+  --color-teal-300: #77D3CF;
+  --color-teal-200: #A8E2DF;
+  --color-teal-100: #D4F0EF;
+  --color-teal-50:  #EDF9F8;
+
+  /* ─── Amber ─── */
+  --color-amber-600: #D4900A;
+  --color-amber-500: #F6AA08;  /* Brand amber */
+  --color-amber-400: #F8BB3A;
+  --color-amber-300: #FACC6C;
+  --color-amber-200: #FBDD9D;
+  --color-amber-100: #FEEECD;
+  --color-amber-50:  #FEF8EC;
+
+  /* ─── Coral / Orange ─── */
+  --color-coral-600: #D44422;
+  --color-coral-500: #F75226;  /* Brand coral */
+  --color-coral-400: #F97551;
+  --color-coral-300: #FA987D;
+  --color-coral-200: #FBBBA8;
+  --color-coral-100: #FDDDD4;
+  --color-coral-50:  #FEEFEB;
+
+  /* ─── Neutrals ─── */
+  --color-gray-950: #0D0D0D;
+  --color-gray-900: #1A1A1A;
+  --color-gray-800: #333333;
+  --color-gray-700: #4A4A4A;
+  --color-gray-600: #666666;
+  --color-gray-500: #808080;
+  --color-gray-400: #9A9A9A;
+  --color-gray-300: #C4C4C4;
+  --color-gray-200: #D8D8D8;
+  --color-gray-100: #E6E6E6;
+  --color-gray-50:  #F5F5F5;
+  --color-white:    #FFFFFF;
+
+  /* ─── Semantic Aliases ─── */
+  --color-brand-primary:    var(--color-navy-900);
+  --color-brand-secondary:  var(--color-blue-500);
+  --color-brand-accent:     var(--color-teal-500);
+
+  --color-text-primary:     var(--color-gray-900);
+  --color-text-secondary:   var(--color-gray-700);
+  --color-text-tertiary:    var(--color-gray-500);
+  --color-text-disabled:    var(--color-gray-300);
+  --color-text-inverse:     var(--color-white);
+  --color-text-link:        var(--color-blue-500);
+
+  --color-surface-base:     var(--color-white);
+  --color-surface-subtle:   var(--color-gray-50);
+  --color-surface-muted:    var(--color-gray-100);
+  --color-surface-inverse:  var(--color-navy-900);
+
+  --color-border-default:   var(--color-gray-100);
+  --color-border-strong:    var(--color-gray-300);
+  --color-border-focus:     var(--color-blue-500);
+
+  --color-status-success:   var(--color-teal-500);
+  --color-status-warning:   var(--color-amber-500);
+  --color-status-error:     var(--color-coral-500);
+  --color-status-info:      var(--color-blue-500);
+}
