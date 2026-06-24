@@ -1,0 +1,33 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Spacing Scale" subtitle="8px base grid — 4px to 128px" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; padding: 16px 20px; font-family: var(--font-sans); box-sizing: border-box; }
+  .row { display: flex; align-items: flex-end; gap: 0; }
+  .bar-wrap { display: flex; flex-direction: column; align-items: center; gap: 4px; margin-right: 8px; }
+  .bar { background: var(--color-blue-500); opacity: 0.8; width: 20px; border-radius: 2px 2px 0 0; }
+  .val { font-size: 9px; color: var(--color-gray-500); }
+  .token { font-size: 8px; color: var(--color-gray-400); }
+  .divider { width: 1px; background: var(--color-gray-100); height: 100px; margin: 0 4px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="bar-wrap"><div class="bar" style="height:4px"></div><div class="val">4</div><div class="token">--1</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:8px"></div><div class="val">8</div><div class="token">--2</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:12px"></div><div class="val">12</div><div class="token">--3</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:16px"></div><div class="val">16</div><div class="token">--4</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:20px"></div><div class="val">20</div><div class="token">--5</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:24px"></div><div class="val">24</div><div class="token">--6</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:32px"></div><div class="val">32</div><div class="token">--8</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:40px"></div><div class="val">40</div><div class="token">--10</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:48px"></div><div class="val">48</div><div class="token">--12</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:64px"></div><div class="val">64</div><div class="token">--16</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:80px"></div><div class="val">80</div><div class="token">--20</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:96px"></div><div class="val">96</div><div class="token">--24</div></div>
+  <div class="bar-wrap"><div class="bar" style="height:112px;opacity:0.4"></div><div class="val">128</div><div class="token">--32</div></div>
+</div>
+</body>
+</html>

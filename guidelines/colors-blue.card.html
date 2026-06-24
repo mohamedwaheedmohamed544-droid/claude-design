@@ -1,0 +1,33 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Blue — Interactive" subtitle="Sky blue scale for CTAs, links, focus states" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; font-family: var(--font-sans); }
+  .row { display: flex; gap: 0; height: 80px; }
+  .swatch { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 6px; }
+  .label { font-size: 10px; font-weight: 600; letter-spacing: 0.04em; }
+  .sub { font-size: 9px; opacity: 0.7; margin-top: 1px; }
+  .meta { display: flex; gap: 24px; padding: 12px 16px 16px; }
+  .token { font-size: 11px; color: var(--color-gray-700); }
+  .token strong { color: var(--color-navy-900); font-weight: 600; display: block; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch" style="background:var(--color-blue-600)"><span class="label" style="color:#fff">600</span><span class="sub" style="color:rgba(255,255,255,0.6)">#007AB8</span></div>
+  <div class="swatch" style="background:var(--color-blue-500)"><span class="label" style="color:#fff">500</span><span class="sub" style="color:rgba(255,255,255,0.6)">#009ADE</span></div>
+  <div class="swatch" style="background:var(--color-blue-400)"><span class="label" style="color:#fff">400</span><span class="sub" style="color:rgba(255,255,255,0.6)">#33AEE5</span></div>
+  <div class="swatch" style="background:var(--color-blue-300)"><span class="label" style="color:var(--color-navy-800)">300</span><span class="sub" style="color:var(--color-navy-700)">#66C3EC</span></div>
+  <div class="swatch" style="background:var(--color-blue-200)"><span class="label" style="color:var(--color-navy-800)">200</span><span class="sub" style="color:var(--color-navy-700)">#99D7F3</span></div>
+  <div class="swatch" style="background:var(--color-blue-100)"><span class="label" style="color:var(--color-navy-800)">100</span><span class="sub" style="color:var(--color-navy-700)">#CCEBF9</span></div>
+  <div class="swatch" style="background:var(--color-blue-50); border-right:1px solid var(--color-gray-100)"><span class="label" style="color:var(--color-navy-800)">50</span><span class="sub" style="color:var(--color-navy-700)">#EBF7FD</span></div>
+</div>
+<div class="meta">
+  <div class="token"><strong>--color-blue-500</strong>Primary CTA, links, focus rings</div>
+  <div class="token"><strong>--color-blue-600</strong>Hover state on blue elements</div>
+  <div class="token"><strong>--color-blue-50</strong>Info backgrounds, tinted panels</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- @dsCard group="Type" viewport="700x320" name="Type Scale" subtitle="Size tokens from xs (11px) to 6xl (72px)" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; font-family: var(--font-sans); padding: 16px 20px; box-sizing: border-box; }
+  .row { display: flex; align-items: baseline; gap: 16px; padding: 4px 0; border-bottom: 1px solid var(--color-gray-50); }
+  .row:last-child { border-bottom: none; }
+  .meta { width: 90px; flex-shrink: 0; }
+  .token { font-size: 10px; color: var(--color-gray-500); font-weight: 500; }
+  .px { font-size: 10px; color: var(--color-gray-400); }
+  .sample { color: var(--color-gray-900); line-height: 1.2; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="meta"><div class="token">--text-6xl</div><div class="px">72px</div></div>
+    <div class="sample" style="font-size:var(--text-6xl)">Aa</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-5xl</div><div class="px">60px</div></div>
+    <div class="sample" style="font-size:var(--text-5xl)">Aa</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-4xl</div><div class="px">48px</div></div>
+    <div class="sample" style="font-size:var(--text-4xl)">Aa — Display</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-3xl</div><div class="px">36px</div></div>
+    <div class="sample" style="font-size:var(--text-3xl)">Aa — Heading 1</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-2xl</div><div class="px">30px</div></div>
+    <div class="sample" style="font-size:var(--text-2xl)">Aa — Heading 2</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-xl</div><div class="px">24px</div></div>
+    <div class="sample" style="font-size:var(--text-xl)">Aa — Heading 3</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-lg</div><div class="px">20px</div></div>
+    <div class="sample" style="font-size:var(--text-lg)">Aa — Subheading</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-md</div><div class="px">17px</div></div>
+    <div class="sample" style="font-size:var(--text-md)">Aa — Body large</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-base</div><div class="px">15px</div></div>
+    <div class="sample" style="font-size:var(--text-base)">Aa — Body default</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-sm</div><div class="px">13px</div></div>
+    <div class="sample" style="font-size:var(--text-sm)">Aa — Small / label</div>
+  </div>
+  <div class="row">
+    <div class="meta"><div class="token">--text-xs</div><div class="px">11px</div></div>
+    <div class="sample" style="font-size:var(--text-xs)">Aa — Caption / metadata</div>
+  </div>
+</body>
+</html>

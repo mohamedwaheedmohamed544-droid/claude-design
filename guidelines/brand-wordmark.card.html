@@ -1,0 +1,54 @@
+<!-- @dsCard group="Brand" viewport="700x200" name="Wordmark" subtitle="pureminds logo lockup — light & dark" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); }
+  .halves { display: flex; height: 200px; }
+  .half { flex: 1; display: flex; align-items: center; justify-content: center; }
+  .light { background: white; }
+  .dark { background: var(--color-navy-900); }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .mark { width: 36px; height: 36px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; }
+  .wordmark { font-family: 'Alexandria', '29LT Zarid Sans', sans-serif; font-weight: 300; font-size: 28px; letter-spacing: -0.02em; }
+  .tag { font-size: 10px; font-weight: 400; letter-spacing: 0.02em; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="halves">
+  <div class="half light">
+    <div>
+      <div class="logo">
+        <div class="mark" style="background:var(--color-navy-900)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="6" stroke="white" stroke-width="1.5" fill="none"/>
+            <circle cx="10" cy="10" r="2" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wordmark" style="color:var(--color-navy-900)">pureminds</div>
+          <div class="tag" style="color:var(--color-gray-500)">العقول الصافية</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="half dark">
+    <div>
+      <div class="logo">
+        <div class="mark" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.15)">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="6" stroke="white" stroke-width="1.5" fill="none"/>
+            <circle cx="10" cy="10" r="2" fill="white"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wordmark" style="color:white">pureminds</div>
+          <div class="tag" style="color:rgba(255,255,255,0.5)">العقول الصافية</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

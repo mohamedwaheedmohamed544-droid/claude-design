@@ -1,0 +1,32 @@
+<!-- @dsCard group="Colors" viewport="700x120" name="Semantic Colors" subtitle="Surface, text, border, and status aliases" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; font-family: var(--font-sans); padding: 16px; box-sizing: border-box; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .item { display: flex; align-items: center; gap: 8px; }
+  .dot { width: 20px; height: 20px; border-radius: var(--radius-sm); flex-shrink: 0; border: 1px solid rgba(0,0,0,0.06); }
+  .name { font-size: 10px; color: var(--color-gray-700); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+</style>
+</head>
+<body>
+<div class="grid">
+  <div class="item"><div class="dot" style="background:var(--color-text-primary)"></div><span class="name">--text-primary</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-text-secondary)"></div><span class="name">--text-secondary</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-text-link)"></div><span class="name">--text-link</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-text-disabled)"></div><span class="name">--text-disabled</span></div>
+
+  <div class="item"><div class="dot" style="background:var(--color-surface-base); border-color:#ddd"></div><span class="name">--surface-base</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-surface-subtle)"></div><span class="name">--surface-subtle</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-surface-muted)"></div><span class="name">--surface-muted</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-surface-inverse)"></div><span class="name">--surface-inverse</span></div>
+
+  <div class="item"><div class="dot" style="background:var(--color-status-success)"></div><span class="name">--status-success</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-status-warning)"></div><span class="name">--status-warning</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-status-error)"></div><span class="name">--status-error</span></div>
+  <div class="item"><div class="dot" style="background:var(--color-status-info)"></div><span class="name">--status-info</span></div>
+</div>
+</body>
+</html>

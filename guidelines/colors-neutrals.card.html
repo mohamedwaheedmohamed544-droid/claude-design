@@ -1,0 +1,38 @@
+<!-- @dsCard group="Colors" viewport="700x160" name="Neutrals" subtitle="Gray scale for text, borders, and surfaces" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; font-family: var(--font-sans); }
+  .row { display: flex; gap: 0; height: 72px; }
+  .swatch { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 5px; }
+  .label { font-size: 9px; font-weight: 600; }
+  .sub { font-size: 8px; opacity: 0.65; margin-top: 1px; }
+  .roles { display: flex; gap: 32px; padding: 10px 16px 14px; }
+  .role { font-size: 11px; }
+  .role strong { color: var(--color-navy-900); font-weight: 600; display: block; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="swatch" style="background:var(--color-gray-950)"><span class="label" style="color:#fff">950</span><span class="sub" style="color:rgba(255,255,255,0.4)">#0D0D0D</span></div>
+  <div class="swatch" style="background:var(--color-gray-900)"><span class="label" style="color:#fff">900</span><span class="sub" style="color:rgba(255,255,255,0.4)">#1A1A1A</span></div>
+  <div class="swatch" style="background:var(--color-gray-800)"><span class="label" style="color:#fff">800</span><span class="sub" style="color:rgba(255,255,255,0.4)">#333333</span></div>
+  <div class="swatch" style="background:var(--color-gray-700)"><span class="label" style="color:#fff">700</span><span class="sub" style="color:rgba(255,255,255,0.4)">#4A4A4A</span></div>
+  <div class="swatch" style="background:var(--color-gray-600)"><span class="label" style="color:#fff">600</span><span class="sub" style="color:rgba(255,255,255,0.4)">#666666</span></div>
+  <div class="swatch" style="background:var(--color-gray-500)"><span class="label" style="color:#fff">500</span><span class="sub" style="color:rgba(255,255,255,0.4)">#808080</span></div>
+  <div class="swatch" style="background:var(--color-gray-400)"><span class="label" style="color:#fff">400</span><span class="sub" style="color:rgba(255,255,255,0.4)">#9A9A9A</span></div>
+  <div class="swatch" style="background:var(--color-gray-300)"><span class="label" style="color:var(--color-gray-800)">300</span><span class="sub" style="color:var(--color-gray-600)">#C4C4C4</span></div>
+  <div class="swatch" style="background:var(--color-gray-200)"><span class="label" style="color:var(--color-gray-700)">200</span><span class="sub" style="color:var(--color-gray-500)">#D8D8D8</span></div>
+  <div class="swatch" style="background:var(--color-gray-100)"><span class="label" style="color:var(--color-gray-700)">100</span><span class="sub" style="color:var(--color-gray-500)">#E6E6E6</span></div>
+  <div class="swatch" style="background:var(--color-gray-50); border-right:1px solid var(--color-gray-100)"><span class="label" style="color:var(--color-gray-700)">50</span><span class="sub" style="color:var(--color-gray-500)">#F5F5F5</span></div>
+</div>
+<div class="roles">
+  <div class="role"><strong>Body text</strong>900 · 800 · 700</div>
+  <div class="role"><strong>Borders</strong>300 · 200 · 100</div>
+  <div class="role"><strong>Surfaces</strong>100 · 50 · white</div>
+  <div class="role"><strong>Disabled</strong>400 · 300</div>
+</div>
+</body>
+</html>

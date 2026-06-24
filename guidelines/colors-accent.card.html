@@ -1,0 +1,55 @@
+<!-- @dsCard group="Colors" viewport="700x240" name="Accent Palette" subtitle="Teal · Amber · Coral — semantic accent colors" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; font-family: var(--font-sans); }
+  .group { display: flex; gap: 0; height: 60px; }
+  .swatch { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 5px; }
+  .label { font-size: 9px; font-weight: 600; }
+  .sub { font-size: 8px; opacity: 0.7; margin-top: 1px; }
+  .section { border-bottom: 1px solid var(--color-gray-100); }
+  .meta { display: flex; gap: 20px; padding: 10px 16px 14px; flex-wrap: wrap; }
+  .token { font-size: 11px; color: var(--color-gray-700); }
+  .token strong { font-weight: 600; display: block; margin-bottom: 1px; }
+  .teal { color: var(--color-teal-600); }
+  .amber { color: var(--color-amber-600); }
+  .coral { color: var(--color-coral-600); }
+</style>
+</head>
+<body>
+<div class="section group">
+  <div class="swatch" style="background:var(--color-teal-600)"><span class="label" style="color:#fff">600</span></div>
+  <div class="swatch" style="background:var(--color-teal-500)"><span class="label" style="color:#fff">500</span><span class="sub" style="color:rgba(255,255,255,0.6)">#1DB5AF</span></div>
+  <div class="swatch" style="background:var(--color-teal-400)"><span class="label" style="color:#fff">400</span></div>
+  <div class="swatch" style="background:var(--color-teal-300)"><span class="label" style="color:var(--color-teal-800)">300</span></div>
+  <div class="swatch" style="background:var(--color-teal-200)"><span class="label" style="color:var(--color-teal-700)">200</span></div>
+  <div class="swatch" style="background:var(--color-teal-100)"><span class="label" style="color:var(--color-teal-700)">100</span></div>
+  <div class="swatch" style="background:var(--color-teal-50)"><span class="label" style="color:var(--color-teal-700)">50</span></div>
+</div>
+<div class="section group">
+  <div class="swatch" style="background:var(--color-amber-600)"><span class="label" style="color:#fff">600</span></div>
+  <div class="swatch" style="background:var(--color-amber-500)"><span class="label" style="color:#fff">500</span><span class="sub" style="color:rgba(255,255,255,0.7)">#F6AA08</span></div>
+  <div class="swatch" style="background:var(--color-amber-400)"><span class="label" style="color:#fff">400</span></div>
+  <div class="swatch" style="background:var(--color-amber-300)"><span class="label" style="color:var(--color-amber-800)">300</span></div>
+  <div class="swatch" style="background:var(--color-amber-200)"><span class="label" style="color:var(--color-amber-700)">200</span></div>
+  <div class="swatch" style="background:var(--color-amber-100)"><span class="label" style="color:var(--color-amber-700)">100</span></div>
+  <div class="swatch" style="background:var(--color-amber-50)"><span class="label" style="color:var(--color-amber-700)">50</span></div>
+</div>
+<div class="group">
+  <div class="swatch" style="background:var(--color-coral-600)"><span class="label" style="color:#fff">600</span></div>
+  <div class="swatch" style="background:var(--color-coral-500)"><span class="label" style="color:#fff">500</span><span class="sub" style="color:rgba(255,255,255,0.6)">#F75226</span></div>
+  <div class="swatch" style="background:var(--color-coral-400)"><span class="label" style="color:#fff">400</span></div>
+  <div class="swatch" style="background:var(--color-coral-300)"><span class="label" style="color:var(--color-coral-800)">300</span></div>
+  <div class="swatch" style="background:var(--color-coral-200)"><span class="label" style="color:var(--color-coral-700)">200</span></div>
+  <div class="swatch" style="background:var(--color-coral-100)"><span class="label" style="color:var(--color-coral-700)">100</span></div>
+  <div class="swatch" style="background:var(--color-coral-50)"><span class="label" style="color:var(--color-coral-700)">50</span></div>
+</div>
+<div class="meta">
+  <div class="token"><strong class="teal">Teal — success, calm</strong>Status indicators, confirmations</div>
+  <div class="token"><strong class="amber">Amber — warning, premium</strong>Alerts, highlights, PurePay</div>
+  <div class="token"><strong class="coral">Coral — energy, error</strong>Errors, actions, PurePay accent</div>
+</div>
+</body>
+</html>

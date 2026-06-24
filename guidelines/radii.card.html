@@ -1,0 +1,28 @@
+<!-- @dsCard group="Spacing" viewport="700x130" name="Border Radius" subtitle="From none to full — radius tokens" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: #fff; padding: 20px; font-family: var(--font-sans); box-sizing: border-box; }
+  .row { display: flex; gap: 16px; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .box { width: 48px; height: 48px; background: var(--color-navy-900); }
+  .pill { width: 80px; height: 36px; background: var(--color-blue-500); }
+  .label { font-size: 9px; color: var(--color-gray-500); text-align: center; }
+  .token { font-size: 8px; color: var(--color-gray-400); text-align: center; }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="item"><div class="box" style="border-radius:var(--radius-none)"></div><div class="label">none</div><div class="token">0px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-xs)"></div><div class="label">xs</div><div class="token">2px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-sm)"></div><div class="label">sm</div><div class="token">4px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-md)"></div><div class="label">md</div><div class="token">8px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-lg)"></div><div class="label">lg</div><div class="token">12px · card</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-xl)"></div><div class="label">xl</div><div class="token">16px</div></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-2xl)"></div><div class="label">2xl</div><div class="token">24px</div></div>
+  <div class="item"><div class="pill" style="border-radius:var(--radius-full)"></div><div class="label">full</div><div class="token">9999px · pill</div></div>
+</div>
+</body>
+</html>
