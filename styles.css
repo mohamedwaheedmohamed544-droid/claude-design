@@ -1,0 +1,7 @@
+/* PureMinds Design System — Root Entry Point */
+/* Import this one file to get the full token set + fonts */
+
+@import './tokens/fonts.css';
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
