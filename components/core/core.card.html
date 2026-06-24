@@ -1,0 +1,131 @@
+<!-- @dsCard group="Components" viewport="700x520" name="Core Components" subtitle="Button · Badge · Input · Card · Avatar" -->
+<!-- @startingPoint section="Components" subtitle="All core UI primitives" viewport="700x520" -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>
+  @keyframes spin { to { transform: rotate(360deg); } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; font-family: var(--font-sans); padding: 20px; }
+  .section { margin-bottom: 24px; }
+  .section-label { font-size: 10px; font-weight: 600; color: var(--color-gray-400); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .col { display: flex; flex-direction: column; gap: 8px; }
+  .divider { height: 1px; background: var(--color-gray-100); margin: 4px 0 12px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { Button, Badge, Input, Card, Avatar } = window.PureMindsDesignSystem_f985d7;
+
+function Demo() {
+  return (
+    <div>
+      {/* Buttons */}
+      <div className="section">
+        <div className="section-label">Button</div>
+        <div className="row" style={{marginBottom:8}}>
+          <Button variant="primary" size="md">Primary</Button>
+          <Button variant="secondary" size="md">Secondary</Button>
+          <Button variant="outline" size="md">Outline</Button>
+          <Button variant="ghost" size="md">Ghost</Button>
+          <Button variant="danger" size="md">Danger</Button>
+        </div>
+        <div className="row" style={{marginBottom:8}}>
+          <Button variant="primary" size="sm">Small</Button>
+          <Button variant="primary" size="md">Medium</Button>
+          <Button variant="primary" size="lg">Large</Button>
+          <Button variant="primary" disabled>Disabled</Button>
+          <Button variant="primary" loading>Loading</Button>
+        </div>
+        <div className="row">
+          <Button variant="outline" size="md" iconLeft="←">Back</Button>
+          <Button variant="primary" size="md" iconRight="→">Continue</Button>
+          <Button variant="secondary" size="sm" iconLeft="↑">Upload</Button>
+        </div>
+      </div>
+
+      <div className="divider"></div>
+
+      {/* Badges */}
+      <div className="section">
+        <div className="section-label">Badge</div>
+        <div className="row">
+          <Badge variant="default">Default</Badge>
+          <Badge variant="primary">Primary</Badge>
+          <Badge variant="blue">Info</Badge>
+          <Badge variant="success" dot>Active</Badge>
+          <Badge variant="warning" dot>Pending</Badge>
+          <Badge variant="danger">Failed</Badge>
+          <Badge variant="outline">Draft</Badge>
+          <Badge variant="success" size="lg" dot>Completed</Badge>
+        </div>
+      </div>
+
+      <div className="divider"></div>
+
+      {/* Inputs */}
+      <div className="section">
+        <div className="section-label">Input</div>
+        <div className="row" style={{alignItems:'flex-start'}}>
+          <Input label="Email" type="email" placeholder="you@example.com" required style={{width:200}} />
+          <Input label="Amount" placeholder="0.00" iconLeft="﷼" hint="Minimum SAR 10" style={{width:180}} />
+          <Input label="Phone" error="Invalid phone number" value="+966 50" style={{width:180}} />
+          <Input label="Search" placeholder="Search…" iconRight="⌕" style={{width:180}} />
+        </div>
+      </div>
+
+      <div className="divider"></div>
+
+      {/* Avatars */}
+      <div className="section">
+        <div className="section-label">Avatar</div>
+        <div className="row">
+          <Avatar name="Mohammed Al-Rashid" size="xl" />
+          <Avatar name="Sara Ahmed" size="lg" status="online" />
+          <Avatar name="Khalid Ibrahim" size="md" status="busy" />
+          <Avatar name="Nour Farid" size="sm" status="away" />
+          <Avatar name="A" size="xs" />
+          <Avatar name="PurePay" shape="square" size="md" />
+          <Avatar name="System" shape="square" size="lg" status="online" />
+        </div>
+      </div>
+
+      <div className="divider"></div>
+
+      {/* Cards */}
+      <div className="section">
+        <div className="section-label">Card</div>
+        <div className="row" style={{alignItems:'flex-start'}}>
+          <Card padding="md" shadow="sm" style={{width:160}}>
+            <div style={{fontSize:'var(--text-xs)',color:'var(--color-gray-500)',marginBottom:4}}>Balance</div>
+            <div style={{fontSize:'var(--text-xl)',fontWeight:600,color:'var(--color-navy-900)'}}>﷼ 12,400</div>
+          </Card>
+          <Card padding="md" shadow="md" hoverable style={{width:160}}>
+            <div style={{fontSize:'var(--text-xs)',color:'var(--color-gray-500)',marginBottom:4}}>Hoverable</div>
+            <div style={{fontSize:'var(--text-lg)',fontWeight:600,color:'var(--color-blue-500)'}}>Hover me</div>
+          </Card>
+          <Card padding="md" bordered shadow="none" style={{width:160}}>
+            <div style={{fontSize:'var(--text-xs)',color:'var(--color-gray-500)',marginBottom:4}}>Bordered</div>
+            <div style={{fontSize:'var(--text-base)',color:'var(--color-gray-700)'}}>No shadow</div>
+          </Card>
+          <Card padding="sm" background="var(--color-navy-900)" style={{width:160}}>
+            <div style={{fontSize:'var(--text-xs)',color:'rgba(255,255,255,0.5)',marginBottom:4}}>Dark card</div>
+            <div style={{fontSize:'var(--text-lg)',fontWeight:600,color:'white'}}>﷼ 3,200</div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>
